@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LIGER Real Estate</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+  }
+  .wrapper {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  header {
+    background: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  header h1 {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+  }
+  .property {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  .property img {
+    width: 100%;
+    height: auto;
+  }
+  nav {
+    background: #ddd;
+    padding: 10px 0;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  }
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+
+<header style="display: flex; align-items: center; justify-content: center; background-color: #000000; height: 10vh;">
+  <h1 style="font-size: 36px; color: white; margin: 0;">LIGER Real Estate</h1>
+</header>
+
+
+
+<nav style="background-color: #FFFFFF;">
+  <ul>
+    <div class="wrapper" id="about">
+  <h2 style="font-family: Arial; font-size: 16px;">Our History</h2>
+  <p>Since its creation in 1995, LIGER Real Estate has established itself as one of the leading real estate agencies on the Côte d'Azur. Founded by Jean Liger and taken over by his son Sébastien Liger in 2015, a visionary with a passion for architecture and the region's incomparable charm, our agency has forged privileged links with an exceptional clientele looking for out-of-the-ordinary residences.</p>
+  
+  <p>With the rise of the region as a luxury destination, Jean quickly realized the importance of personalized, exclusive service. He therefore recruited a team of seasoned professionals capable of understanding and satisfying our customers' most demanding requirements.</p>
+  
+  <p>Today, LIGER Real Estate is headed by Sébastien Liger, Jean's son, who has inherited her father's passion for excellence and detail. Under her leadership, the agency has expanded its portfolio to include cutting-edge properties, while preserving the soul and authenticity of the historic homes for which our catalog is renowned.</p>
+  
+  <p>Our agents, specialists in prestige transactions, have in-depth knowledge of the local market and an international network. At LIGER Real Estate, we don't just sell houses; we offer keys to an exceptional lifestyle. Each property in our portfolio is selected for its unique character, privileged location and potential to become more than just a house: a true home. </p>
+  
+  <p>Our commitment to our customers goes beyond property acquisition. Our consultants provide comprehensive support, from legal advice to property management and personalized concierge services, to meet the expectations of our international clientele.</p>
+  
+  <p>With nearly three decades in business, we are delighted to see many of our customers return to us for their second or even third purchase, a testament to the unrivalled quality of service we strive to provide day after day. Our history is a mosaic of shared encounters, relationships and successes, and each new transaction is written with the same passion and dedication that have made LIGER Real Estate synonymous with excellence in luxury real estate.</p>
+  </ul>
+
+<hr style="border: 1px solid black;">
+
+<nav style="background-color: #FFFFFF;">
+  <ul style="font-family: Arial; font-size: 14px;">
+    <div class="wrapper">
+  <h3 style="font-family: Arial; font-size: 16px;">Our Favorite Villas</h3>
+  <section class="gallery">
+    <div class="property">
+        <img src="https://www.magrey.fr/photos/71530-1689739555.jpg" alt="">
+        <h3>Villa Serenità</h3>
+        <p>Price : 39 000 000€</p>
+        <button onclick="toggleDetails(this)">More details</button>
+        <div class="details" style="display:none;">
+        <p>Set in 4 hectares of splendid, tropical-inspired landscaped grounds, two new villas boast spacious interiors and superb amenities.</p>
+        <p>Living area: 2000m² + 2000m² basement<br>
+        Surface area: 40.000m²<br>
+        Rooms: 14 + 6 staff rooms</p>
+        <p>The two villas are identically distributed as follows:</p>
+        <ul>
+            <li>First floor: Majestic entrance hall with ceiling heights of over 6 m, succession of 3 reception rooms, dining room, guest toilet (Mr. and Mrs.), personal area with independent access. One ground-level suite.</li>
+            <li>Floors: Master bedroom with a master suite, a master suite with a master suite and a superb private terrace. 4 additional suites.</li>
+            <li>Basement: Professional kitchen of over 100m² with dumbwaiter. Professional linen room, cold room, security PC, boiler room. Garage for 20 cars.</li>
+        </ul>
+        <p>Each villa benefits from a master elevator, a staff elevator, reversible air conditioning, underfloor heating, hot and cold VMC.</p>
+        <p>Advanced security system with 28 cameras. 2 heated pools with pool-house.</p>
+        <p>Home automation system, water tank, generator.</p>
+      </div>
+    </div>
+
+    <div class="property">
+        <img src="https://www.magrey.fr/photos/70944-1689739434.jpg">
+        <h3>Villa Lumina</h3>
+        <p>Price : 46 000 000€</p>
+      <button onclick="toggleDetails(this)">More details</button>
+      <div class="details" style="display:none;">
+      <p>A masterpiece in Saint Jean Cap Ferrat</p>
+      <p>With a spectacular location and breathtaking architecture, this extraordinary villa designed by Jean Nouvel is located in one of the most sought-after neighborhoods on the Côte d'Azur. Overlooking the Mediterranean, it offers its occupants the chance to live in lush natural surroundings.</p>
+      <p>This long, contemporary residence (595 m²) hugs the topography of the plot to blend harmoniously into the surrounding neighborhood. Facing west, it features a series of glass façades that open out onto the Villefranche-sur-Mer harbor. Every room in the house offers an incredible view of this natural harbor. And the Principality of Monaco and Nice are only a few kilometers away from this haven of peace in Saint-Jean-Cap-Ferrat.</p>
+      <p>A rare gem in the heart of the Côte d'Azur, indeed. Optimum use of space.</p>
+      <p>With its stainless steel framework and plant-filled glass roof, this villa eliminates the barriers between inside and outside, making transparency one of its major assets. See without being seen. Admire the sky, the sea and the surrounding hills. When night falls, look up at the stars. This magnificent villa is like something out of a dream.</p>
+      <p>The entrance sets the tone, encouraging you inside. Every space is exceptional, with everything designed to be both functional and beautiful, leading to perfect results. As a result, there's plenty of storage space hidden behind rosewood facades and no dividing walls to interrupt the direction of flow. Fees payable by the vendor.</p>
+
+      </div>
+    </div>
+
+        <div class="property">
+        <img src="https://www.magrey.fr/photos/82673-1701406841.jpg">
+        <h3> Villa Horizon Bleu</h3>
+        <p>Price : 6 300 000€</p>
+        <button onclick="toggleDetails(this)">More details</button>
+      <div class="details" style="display:none;">
+        <p>Luxurious Belle Epoque-style villa in Roquebrune Cap Martin, front row facing the sea, fully renovated by an architect and boasting panoramic sea views.</p>
+        <p>The villa is located just a few hundred meters from Monaco in a very quiet street, and has three large parking spaces and a closed garage.</p>
+        <p>The 240 m2 villa is set in 1,400 m2 of grounds with pool house, summer kitchen, bio-climatic pergolas, swimming pool and petanque court.</p>
+        <p>The elegant interior features an entrance hall, living and dining room, fitted kitchen, 1 master bedroom of 50 m2 with double dressing room, bathroom with shower and 4 en suite bedrooms.</p>
+        <p>Janitor's cottage or staff house of 20 m2. Home automation, alarm, elevator.</p>
+      </div>
+    </div>
+
+        <div class="property">
+        <img src="https://www.magrey.fr/photos/71754-1689739590.jpg">
+        <h3>Villa Belle Époque</h3>
+        <p>Price : 14 500 000€</p>
+        <button onclick="toggleDetails(this)">More details</button>
+      <div class="details" style="display:none;">
+        <p>Beautiful Belle Epoque-style property, approx. 500m² on a 1500m² plot, located in a very quiet, residential area of Cap d'ail and close to Monaco.</p>
+        <p>The villa comprises 3 levels plus an attic.</p>
+        <p>First floor: Double living room, TV area, dining room, all opening onto the terrace. Equipped kitchen with dining area and separate terrace. Elevator. Very large terrace with swimming pool.</p>
+        <p>1st floor: Master bedroom with dressing room and private terrace, a second bedroom with bathroom.</p>
+        <p>2nd floor: 3 bedrooms and 3 bathrooms, 3 dressing rooms Attic: Superb view, small studio with kitchenette and bathroom.</p>
+       <p>4-car garage with direct elevator access to the villa, cellars. Garden on the garage facing the villa, old pine trees, swimming pool. Janitor's cottage with 1 bedroom.</p>
+    </div>
+  </div>
+
+        <div class="property">
+        <img src="https://www.magrey.fr/photos/83779-1708090385.jpg">
+        <h3>Villa Azura</h3>
+        <p>Price : 8 900 000€</p>
+        <button onclick="toggleDetails(this)">More details</button>
+      <div class="details" style="display:none;">
+        <p>Magnificent property with a total surface area of 450 m2 located on the western slope of Cap d'Antibes in a gated estate.</p>
+        <p>A magnificent 2600 m2 garden with swimming pool.</p>
+        <p>The main villa features high ceilings and large bay windows.</p>
+        <p>It comprises: an entrance hall, a vast living room with fireplace and fully equipped kitchen, 1 master bedroom with dressing room/bathroom and 3 additional bedrooms with bath or shower. First floor: large bedroom with dressing room, bathroom and terrace.</p>
+        <p>Plenty of storage space, wine cellar, laundry room.</p>
+        <p>Garage for 3 cars and ample parking.</p>
+        <p>Swimming pool with pool house and bar.</p>
+      </div>
+    </div>
+
+        <div class="property">
+        <img src="https://www.magrey.fr/photos/71947-1689739627.jpg">
+        <h3>Villa Mare Blu</h3>
+        <p>Price : 10 500 000€</p>
+        <button onclick="toggleDetails(this)">More details</button>
+      <div class="details" style="display:none;">
+         <p>Exceptional setting for this waterfront, art moderne-style, single-storey villa overlooking the sea in one of the most beautiful bays of Cap d'Antibes.</p>
+         <p>The villa has been completely and luxuriously renovated and boasts 200 m2 of living space on 633 m2 of land. Spacious living/dining room, fully equipped kitchen, 3 bedrooms with bathroom or shower. Fully air-conditioned.</p>
+         <p>Mosaic infinity pool perfectly incorporated into the 300 m2 exotic wood terrace facing the sea.</p>
+         <p>Private beachfront with landing stage, shower, deckchairs and ladder to the sea. Spa with hammam, showers and changing room. 2 parking spaces. Alarm and video surveillance.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script>
+function toggleDetails(button) {
+  var details = button.nextElementSibling;
+  if (details.style.display === "none") {
+    details.style.display = "block";
+    button.textContent = "More details";
+  } else {
+    details.style.display = "none";
+    button.textContent = "Less details";
+  }
+}
+</script>
+
+<hr style="border: 1px solid black;">
+
+<nav style="background-color: #FFFFFF;">
+  <ul style="font-family: Arial; font-size: 14px;">
+    <div class="wrapper" id="about">
+  <h4 style="font-family: Arial; font-size: 16px;">Our Team</h4>
+  <div class="team">
+    <div class="agent">
+    <h4 style="margin-bottom: 1px;">CEO</h4>
+    <p style="margin-top: 1px; margin-bottom: 1px;">Sébastien Liger</p>
+    <p style="margin-top: 1px; margin-bottom: 1px;">Email: <a href="mailto:sebastien.liger@ligerrealestate.com">sebastien.liger@ligerrealestate.com</a></p>
+    <p style="margin-top: 1px; margin-bottom: 1px;">Téléphone: 0652566951</p>
+      <img src="C:\Users\sebli\Downloads\a890ee99-55ed-4fb4-9733-b6730de2f337 (1).jpg" style="width: 300px; height: auto;">
+    </div>
+    
+    <div class="agent">
+    <h4 style="margin-bottom: 1px;">Associate Real Estate Agent</h4>
+    <p style="margin-top: 1px; margin-bottom: 1px;">Zoé Garcia</p>
+    <p style="margin-top: 1px; margin-bottom: 1px;">Email: <a href="mailto:zoe.garcia@ligerrealestate.com">zoe.garcia@ligerrealestate.com</a></p>
+    <p style="margin-top: 1px; margin-bottom: 1px;">Téléphone: 0623419578</p>
+  <img src="C:\Users\sebli\Downloads\DALL·E 2024-02-26 12.42.49 - Create an image of a professional female real estate agent. She is elegantly dressed in a formal business attire, with a stylish haircut and a welcomi.webp" style="width: 300px; height: auto;" alt="Zoé Garcia">
+    </div>
+
+    <div class="agent">
+    <h4 style="margin-bottom: 1px;">Senior Real Estate Agent</h4>
+    <p style="margin-top: 1px; margin-bottom: 1px;">Damien Petit</p>
+    <p style="margin-top: 1px; margin-bottom: 1px;">Email: <a href="mailto:damien.petit@ligerrealestate.com">damien.petit@ligerrealestate.com</a></p>
+    <p style="margin-top: 1px; margin-bottom: 1px;">Téléphone: 0620948120</p>
+  <img src="C:\Users\sebli\Downloads\DALL·E 2024-02-26 12.43.16 - Create an image of a professional male real estate agent. The agent is French, with a friendly and approachable demeanor, styled in a smart-casual man.webp" style="width: 300px; height: auto;" alt="Damien Petit">
+    </div>
+    
+    <div class="agent">
+    <h4 style="margin-bottom: 1px;">Senior Real Estate Agent</h4>
+    <p style="margin-top: 1px; margin-bottom: 1px;">Natalia Sokolova</p>
+    <p style="margin-top: 1px; margin-bottom: 1px;">Email: <a href="mailto:natalia.sokolova@ligerrealestate.com">natalia.sokolova@ligerrealestate.com</a></p>
+    <p style="margin-top: 1px; margin-bottom: 1px;">Téléphone: 0697625638</p>
+  <img src="C:\Users\sebli\Downloads\DALL·E 2024-02-26 13.04.29 - Create an image of a professional female real estate agent working for Liger Real Estate in the South of France. She is elegantly dressed, exuding con.webp" style="width: 300px; height: auto;" alt="Natalia Sokolova">
+    </div>
+
+    <div class="agent">
+    <h4 style="margin-bottom: 1px;">Senior Real Estate Agent</h4>
+    <p style="margin-top: 1px; margin-bottom: 1px;">David Fernández</p>
+    <p style="margin-top: 1px; margin-bottom: 1px;">Email: <a href="mailto:david.fernandez@ligerrealestate.com">david.fernandez@ligerrealestate.com</a></p>
+    <p style="margin-top: 1px; margin-bottom: 1px;">Téléphone: 0659826354</p>
+  <img src="C:\Users\sebli\Downloads\DALL·E 2024-02-26 12.42.35 - Create an image of a third professional male real estate agent. The agent appears sharp and professional, with a neat suit and a charismatic, trustwor.webp" style="width: 300px; height: auto;" alt="David Fernández">
+  </div>
+
+    <div class="agent">
+    <h4 style="margin-bottom: 1px;">Junior Real Estate Agent</h4>
+    <p style="margin-top: 1px; margin-bottom: 1px;">Andrea De Luca</p>
+    <p style="margin-top: 1px; margin-bottom: 1px;">Email: <a href="mailto:andrea.deluca@ligerrealestate.com">andrea.deluca@ligerrealestate.com</a></p>
+    <p style="margin-top: 1px; margin-bottom: 1px;">Téléphone: 0653678490</p>
+  <img src="C:\Users\sebli\Downloads\DALL·E 2024-02-26 13.18.48 - Create an image of a professional male real estate agent. The agent is stylishly dressed in a designer suit and tie, looking polished and urbane. He s.webp" style="width: 300px; height: auto;" alt="Andrea De Luca">
+      </div>
+    </div>
+  </ul>
+
+<hr style="border: 1px solid black;">
+
+<nav style="color: #000000; background-color: #FFFFFF;">
+  <ul>
+    <div class="wrapper" id="about">
+      <h5 style="font-family: Arial; font-size: 16px;">Contacts</h5>
+      <ul style="font-family: Arial; font-size: 14px;">
+        <li>Email: office@ligerrealestate.com</li>
+        <li>Phone Number: 0784562971</li>
+        <li>Address: 31 Bd du Général de Gaulle, 06230 Saint-Jean-Cap-Ferrat</li>
+      </ul>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2885.1812413967684!2d7.329179915602548!3d43.69484555321793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cdc85d785a23b7%3A0x7138395dd7eb1de3!2s31%20Boulevard%20du%20G%C3%A9n%C3%A9ral%20de%20Gaulle%2C%2006230%20Saint-Jean-Cap-Ferrat%2C%20France!5e0!3m2!1sen!2s!4v1646401937005!5m2!1sen!2s" width="500" height="350" style="border:0;"></iframe>
+    </div>
+  </ul>
+</nav>
+
+
+  <div style="background-color: #000000; color: #FFFFFF; text-align: center;">© 2024 LIGER Real Estate</div>
+</nav>
+
+
+</body>
+</html>
